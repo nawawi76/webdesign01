@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form and Table</title>
+</head>
+<body>
+     <table border="1" cellpadding="20">
+        <tr>
+            <th colspan="2">Data Mahasiswa</th>
+        </tr>
+        <tr>
+            <th>Nama</th>
+            <th>Kelas</th>
+        </tr>
+        <tr>
+            <td>Nawawi</td>
+            <td>ASE</td>
+        </tr>
+        <tr>
+            <td>Adimas</td>
+            <td>ASE</td>
+        </tr>
+        <tr>
+            <td>Sukron</td>
+            <td>OAA</td>
+        </tr> 
+    </table>
+    <br>
+    <table border="1">
+        <tr>
+            <th colspan="3">Data Matkul</th>
+        </tr>
+        <tr>
+            <th>Nama</th>
+            <th>SKS</th>
+            <th>Hari</th>
+        </tr>
+        <tr>
+            <td>web design</td>
+            <td>4</td>
+            <td>jum'at</td>
+        </tr>
+        <tr>
+            <td>database</td>
+            <td>2</td>
+            <td>selasa</td>
+        </tr>
+        <tr>
+            <td rowspan="2">progamming</td>
+            <td>2</td>
+            <td>rabu</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>senin</td>
+        </tr>
+    </table>
+    <form action="#">
+       <table>
+        <tr>
+            <td>NIM</td>
+            <td>: <input type="text" name="nim" id="nim"></td>
+        </tr>
+        <tr>
+            <td>Nama</td>
+            <td>: <input type="text" name="nama" id="nama"></td>
+        </tr>
+        <tr>
+            <td>Tanggal Lahir</td>
+            <td>: <input type="date" name="tgllahir" id="tgllahir"></td>
+        </tr>
+        <tr>
+            <td>Jenis Kelamin</td>
+            <td>: <input type="radio" name="jk" id="jk">Laki-Laki</td>
+            <td>: <input type="radio" name="jk" id="jk">Perempuan</td>
+        </tr>
+        <tr>
+            <td>Agama</td>
+            <td>:
+                <select name="agm" id="agm">
+                  <option value="">-Pilih Agama-</option>
+                  <option value="Islam">Islam</option>
+                  <option value="Hindu">Hindu</option>
+                  <option value="Kristen">Kristen</option>
+                  <option value="Protestan">Protestan</option>
+                  <option value="Budha">Budha</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Hobi</td>
+            <td>: <input type="checkbox" name="makan" id="makan">
+                  <input type="checkbox" name="traveling" id="traveling">
+                  <input type="checkbox" name="futsal" id="futsal">
+            </td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>: <input type="email" name="email" id="email"></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td>: <input type="password" name="pass" id="pass"></td>
+        </tr>
+        <tr>
+            <td>Alamat</td>
+            <td>: <textarea name="alamat" id="alamat" cols="30" rows="5"></textarea></td>
+        </tr>
+      </table>
+    </form>
+
+</body>
+</html>
